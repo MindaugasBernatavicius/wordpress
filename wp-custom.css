@@ -1,0 +1,51 @@
+/*
+This file contains WP custom CSS 
+(identified by id="wp-custom-css" in the wp html)
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+.entry-content {
+	text-align: justify;
+}
+
+pre.special_formatting {
+	background: #fbfaf8;
+	padding: .5rem;
+	word-break: normal;
+	margin: .5rem 0 .2rem;
+	font-size: 1.3rem;
+	line-height: 1.65rem;
+	background-color: #F8F8F8;
+	border: 1px solid #CCC;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+	margin: 15px 0;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+p {
+	margin-bottom: 0;
+}
+
+/*Fixing the sites appearance*/
+/*1. Shrinking the header*/
+.header-inner-site-branding, .header-inner-site-branding.header-logo-wrap-single {
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+
+/*2. Shrinking the size of article box*/
+article[id^="post-"]{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+/*3. Shrinking the bottom margin*/
+.site-main > article.blog-post, .site-main > article.search-post{
+	margin-bottom: 5px;
+}
